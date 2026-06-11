@@ -26,11 +26,12 @@
     .tagline { color: var(--dim); font-size: 1.05rem; margin-bottom: 3rem; max-width: 460px; line-height: 1.6; }
     .games { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; max-width: 720px; }
     .game-card {
-      display: block; text-decoration: none; color: var(--text); background: var(--surface);
+      background: var(--surface);
       border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem 2rem;
       width: min(320px, 100%); text-align: left; transition: all 0.2s;
     }
     .game-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .game-main { display: block; text-decoration: none; color: var(--text); }
     .game-card h2 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 1.5rem; margin-bottom: 0.4rem; }
     .game-card p { color: var(--dim); font-size: 0.9rem; line-height: 1.5; }
     .langs { display: block; margin-top: 0.9rem; font-size: 0.78rem; color: var(--dim); }
@@ -44,15 +45,28 @@
   <h1>UserGuiding <em>Games</em></h1>
   <p class="tagline">Small browser games about big product problems. Play them, rage at them, then fix your own onboarding.</p>
   <div class="games">
-    <a class="game-card" href="/worst-onboarding/">
-      <h2>Worst Onboarding Ever</h2>
-      <p>Survive 5 levels of the worst UX patterns ever shipped. We track your rage clicks. You won't enjoy this, and that's the point.</p>
+    <div class="game-card">
+      <a class="game-main" href="/worst-onboarding/">
+        <h2>Worst Onboarding Ever</h2>
+        <p>Survive 5 levels of the worst UX patterns ever shipped. We track your rage clicks. You won't enjoy this, and that's the point.</p>
+      </a>
       <span class="langs">
         <a href="/worst-onboarding/">EN</a>
         <a href="/worst-onboarding/tr/">TR</a>
         <a href="/worst-onboarding/pt-br/">PT-BR</a>
       </span>
-    </a>
+    </div>
+    <div class="game-card">
+      <a class="game-main" href="/savvy-game/">
+        <h2>The Savvy Game</h2>
+        <p>A 60-second quiz that scores how tech-savvy your users really are. Persona, share card, and onboarding fixes included.</p>
+      </a>
+      <span class="langs">
+        <a href="/savvy-game/">EN</a>
+        <a href="/savvy-game/tr/">TR</a>
+        <a href="/savvy-game/pt-br/">PT-BR</a>
+      </span>
+    </div>
   </div>
   <footer>Built by <a href="https://userguiding.com?utm_source=games-hub&utm_medium=referral" target="_blank" rel="noopener">UserGuiding</a></footer>
 </body>
