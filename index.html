@@ -29,12 +29,13 @@
       background: var(--surface);
       border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem 2rem;
       width: min(320px, 100%); text-align: left; transition: all 0.2s;
+      display: flex; flex-direction: column;
     }
     .game-card:hover { border-color: var(--accent); transform: translateY(-2px); }
     .game-main { display: block; text-decoration: none; color: var(--text); }
     .game-card h2 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 1.5rem; margin-bottom: 0.4rem; }
     .game-card p { color: var(--dim); font-size: 0.9rem; line-height: 1.5; }
-    .langs { display: block; margin-top: 0.9rem; font-size: 0.78rem; color: var(--dim); }
+    .langs { display: block; margin-top: auto; padding-top: 0.9rem; font-size: 0.78rem; color: var(--dim); }
     .langs a { color: var(--dim); text-decoration: underline; text-underline-offset: 3px; margin-right: 0.6rem; }
     .langs a:hover { color: var(--text); }
     footer { margin-top: 4rem; font-size: 0.8rem; color: var(--dim); opacity: 0.7; }
@@ -46,12 +47,6 @@
   <p class="tagline">Small browser games about big product problems. Play them, rage at them, then fix your own onboarding.</p>
   <div class="games">
     <div class="game-card">
-      <a class="game-main" href="/worst-onboarding-2/">
-        <h2>Worst Onboarding Ever 2</h2>
-        <p>The sequel nobody asked for. Five community-designed levels, each worse than the last.</p>
-      </a>
-    </div>
-    <div class="game-card">
       <a class="game-main" href="/worst-onboarding/">
         <h2>Worst Onboarding Ever</h2>
         <p>Survive 5 levels of the worst UX patterns ever shipped. We track your rage clicks. You won't enjoy this, and that's the point.</p>
@@ -60,6 +55,17 @@
         <a href="/worst-onboarding/">EN</a>
         <a href="/worst-onboarding/tr/">TR</a>
         <a href="/worst-onboarding/pt-br/">PT-BR</a>
+      </span>
+    </div>
+    <div class="game-card">
+      <a class="game-main" href="/worst-onboarding-2/">
+        <h2>Worst Onboarding Ever 2</h2>
+        <p>The sequel nobody asked for. Five community-designed levels, each worse than the last.</p>
+      </a>
+      <span class="langs">
+        <a href="/worst-onboarding-2/">EN</a>
+        <a href="/worst-onboarding-2/tr/">TR</a>
+        <a href="/worst-onboarding-2/pt-br/">PT-BR</a>
       </span>
     </div>
     <div class="game-card">
